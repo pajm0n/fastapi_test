@@ -1,4 +1,4 @@
-add-migrations:
+migrations:
 	 alembic revision --autogenerate
 
 migrate:
