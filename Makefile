@@ -1,14 +1,8 @@
-dev:
-	docker-compose up -d
+add-migrations:
+	 alembic revision --autogenerate
 
-dev-down:
-	docker-compose down
-
-push-migration:
+migrate:
 	alembic upgrade head
 
-start-server:
+start:
 	uvicorn app.main:app --reload
-
-install-modules:
-	pip install fastapi[all] fastapi-mail==1.2.2 fastapi-jwt-auth[asymmetric] passlib[bcrypt] alembic SQLAlchemy psycopg2
