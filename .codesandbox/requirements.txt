@@ -1,4 +1,7 @@
-fastapi
-uvicorn[standard]
-SQLAlchemy
-fastapi-utils
+alembic==1.9.0
+fastapi==0.87.0
+Jinja2==3.1.2
+SQLAlchemy==1.4.45
+uvicorn==0.20.0
+python-dotenv==0.21.0
+psycopg2==2.9.5
